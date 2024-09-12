@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoMood - Emotion Detection Result</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <div class="result-container">
+        <h1 id="heading">Predicted Emotion: <span>{{ emotion| capfirst }}</span></h1>
+        <div class="audio-container">
+            {% comment %} <audio controls>
+                <source src="{{ audio_file_url  }}" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio> {% endcomment %}
+        </div>
+        <div class="gif-container">
+            {{ gif_embed_code|safe }}
+        </div>
+        <br>
+        <div>
+            {% if audio_file_url %}
+            <audio controls>
+                <source src="{{ audio_file_url }}" type="audio/wav">
+            </audio>
+            {% endif %}
+            <br><a href="{% url 'predict_emotion' %}" class="back-link">Predict Another Emotion</a>
+        </div>
+    
+        {% comment %} </div>
+        <a href="{% url 'predict_emotion' %}" class="back-link">Predict Another Emotion</a>
+    </div> {% endcomment %}
+</body>
+</html>

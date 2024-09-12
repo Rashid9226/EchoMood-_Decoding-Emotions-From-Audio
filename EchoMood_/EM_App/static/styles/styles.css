@@ -1,0 +1,159 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;               /* Enables flexbox on the body */
+    flex-direction: column;      /* Aligns children vertically */
+    justify-content: center;     /* Centers children vertically */
+    align-items: center;         /* Centers children horizontally */
+    height: 100vh;               /* Full viewport height */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;            /* Limits width for better readability */
+    margin: 0;                   /* Removes default margin */
+    padding: 20px;              /* Adds padding around content */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 8px;         /* Rounds corners of the container */
+}
+
+.header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Rounds only top corners */
+}
+
+.form-container {
+    padding: 30px;
+}
+
+.gif-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e8491d;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+/* Additional styles for result.html */
+
+/* Ensure body inherits existing styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Result container style */
+.result-container {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Header style */
+h1 {
+    font-size: 2em;
+    color: #f9f9f9;
+    margin-bottom: 20px;
+}
+#heading {
+    color:#35424a;
+}
+h1 span {
+    color: #e8491d; /* Highlight color for emotion */
+}
+
+/* GIF container style */
+.gif-container {
+    display: flex;             /* Enables flexbox */
+    justify-content: center;   /* Centers items horizontally */
+    align-items: center;
+}
+
+
+
+
+
+/* Back link style */
+.back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #35424a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.back-link:hover {
+    background: #e8491d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .result-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .back-link {
+        width: 100%;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+}
+
+.audio-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
