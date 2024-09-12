@@ -31,4 +31,10 @@ A learning curve plot visualizes the model's loss values over iterations, giving
 
 
 # Output
+<h3>Predict Emotion</h3> 
+
 ![](https://github.com/Rashid9226/EchoMood-_Decoding-Emotions-From-Audio/blob/main/imgs/predict.PNG)
+<br>
+<h3>result</h3>  
+
+![](https://github.com/Rashid9226/EchoMood-_Decoding-Emotions-From-Audio/blob/main/imgs/result.PNG)
